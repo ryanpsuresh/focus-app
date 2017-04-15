@@ -34,7 +34,7 @@ export class Welcome extends React.Component {
           </View>
           <View style={{padding: 30 }}>
             <Button
-              onPress={() => navigate('Places')}
+              onPress={() => navigate('Main')}
               title="Places"
               style={styles.button}
               textStyle={styles.buttonText}
