@@ -52,3 +52,47 @@ export class Welcome extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    width: null,
+    height: null
+  },
+  titleContianer: {
+    backgroundColor: 'transparent', 
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 0.2
+  },
+  title: {
+    backgroundColor: 'transparent',
+    fontSize: 48,
+    fontWeight: '500',
+    color: '#F3F3F3',
+    textAlign: 'center'
+  },
+  infoContainer: {
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    flex: 0.3
+  },
+  info: {
+    fontSize: 30,
+    alignItems: 'center',
+    textAlign: 'center',
+    margin: 20,
+    fontWeight: '100',
+    color: '#F3F3F3'
+  },
+  button: {
+    backgroundColor: 'transparent',
+    borderColor: '#EADCDC',
+    padding: 10,
+    borderRadius: 10
+  },
+  buttonText: {
+    color: '#EADCDC'
+  }
+});
