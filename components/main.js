@@ -53,3 +53,21 @@ export class Places extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  image: {
+    flex:1, 
+    width: null, 
+    height: 120, 
+    alignItems: 'center', 
+    justifyContent: 'center',
+    marginBottom: 5,
+  },
+  text: {
+    fontFamily: 'Courier New', 
+    backgroundColor: 'transparent', 
+    fontWeight: 'bold', 
+    fontSize: 22, 
+    color: 'white'
+  }
+});
