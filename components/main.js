@@ -3,7 +3,7 @@ import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } fr
 import { StackNavigator } from 'react-navigation';
 
 const locationData = {
-  '0': [require('../assets/taj.jpg'), 'https://www.google.com/maps/@27.1733511,78.042109,3a,75y,1.38h,89.29t/data=!3m7!1e1!3m5!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5!7i13312!8i6656?hl=en//www.google.com/maps/preview/@27.173385,78.042122,3a,75y,1.38h,89.29t/data=!3m5!1e1!3m3!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5?hl=en'],
+  '0': [require('../assets/whitenoise1.jpg'), 'https://www.google.com/maps/@27.1733511,78.042109,3a,75y,1.38h,89.29t/data=!3m7!1e1!3m5!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5!7i13312!8i6656?hl=en//www.google.com/maps/preview/@27.173385,78.042122,3a,75y,1.38h,89.29t/data=!3m5!1e1!3m3!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5?hl=en'],
   '1': [require('../assets/machu.jpg'), 'https://www.google.com/maps/@-13.1640352,-72.5449358,3a,90y,0.69h,76.11t/data=!3m6!1e1!3m4!1sshqpOcVdDrWDJrlbJTiTfg!2e0!7i13312!8i6656'],
   '2': [require('../assets/petra.jpg'), 'https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/'],
   '3': [require('../assets/china.jpg'), 'https://www.google.com/maps/place/Great+Wall+of+China/@40.4318996,116.56842,555m/data=!3m1!1e3!4m5!3m4!1s0x35f121d7687f2ccf:0xd040259b950522df!8m2!3d40.4319077!4d116.5703749'],
@@ -30,7 +30,7 @@ export class Main extends React.Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows([
-        'Taj Mahal', 'Machu Pichu', 'Petra', 'Great Wall of China', 'Christ Redeemer', 'Chichen Itza', 'The Colosseum'
+        'White Noise', 'Brown Noise', 'Pink Noise', 'Relaxing Rain', 'Christ Redeemer', 'Chichen Itza', 'The Colosseum'
       ])
     };
   }
