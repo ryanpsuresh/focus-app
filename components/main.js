@@ -42,11 +42,7 @@ export class Main extends React.Component {
           dataSource={this.state.dataSource}
           renderRow={(rowData, sectionID, rowID) => 
             <TouchableOpacity
-              onPress = {() => {
-                console.log('being pressed');
-                Linking.openURL(`${locationData[rowID][1]}`);
-                }
-              }
+              onPress = {() => navigate('MediaPlayer')}
             >
               <Image source={locationData[rowID][0]} style={styles.image} resizeMode='cover'>
                 <Text style={styles.text}>

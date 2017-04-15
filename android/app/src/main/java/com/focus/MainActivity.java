@@ -1,6 +1,7 @@
 package com.focus;
 
 import com.facebook.react.ReactActivity;
+import com.greatdroid.reactnative.media.MediaKitPackage;
 
 public class MainActivity extends ReactActivity {
 

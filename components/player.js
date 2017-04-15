@@ -1,21 +1,41 @@
-import React, { Component } from 'react'
-import { Media, Player, controls } from 'react-media-player'
-const { PlayPause, MuteUnmute, } = controls
+import React from 'react';
+import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import Button from 'apsl-react-native-button';
+import Sound from 'react-native-simple-sound';
 
-class MediaPlayer extends Component {
+export class MediaPlayer extends React.Component {
   render() {
     return (
-      <Media>
-        <div className="media">
-          <div className="media-player">
-            <Player src="http://www.youtube.com/embed/h3YVKTxTOgU"/>
-          </div>
-          <div className="media-controls">
-            <PlayPause/>
-            <MuteUnmute/>
-          </div>
-        </div>
-      </Media>
-    )
+    <View style={{padding: 30 }}>
+     <Button
+      onPress={() => {
+       Sound.enable(true);
+       Sound.prepare('../assets/white.mp3');
+       Sound.play();
+       }
+      }
+      title="Main"
+      style={styles.button}
+      textStyle={styles.buttonText}
+      children={'Start Button'}
+     />
+    </View>
+    );
   }
 }
+
+const styles = StyleSheet.create({
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+  button: {
+    backgroundColor: 'transparent',
+    borderColor: '#EADCDC',
+    padding: 10,
+    borderRadius: 10
+  },
+});
