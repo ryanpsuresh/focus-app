@@ -30,12 +30,12 @@ export class Welcome extends React.Component {
         >
           <View style={styles.titleContianer}>
             <Text style={styles.title}>
-              Wonders
+              Focus
             </Text>
           </View>
           <View style={styles.infoContainer}>
             <Text style={styles.info}>
-              Discover the wonders of the world in the palm of your hand
+              Improve your concentration by listening to various different sounds proven to enhance your focus
             </Text>
           </View>
           <View style={{padding: 30 }}>
