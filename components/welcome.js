@@ -29,7 +29,7 @@ export class Welcome extends React.Component {
           </View>
           <View style={styles.infoContainer}>
             <Text style={styles.info}>
-              Improve your concentration by listening to various different sounds proven to enhance your focus
+              Improve your concentration by listening to various sounds scientifically proven to enhance your focus
             </Text>
           </View>
           <View style={{padding: 30 }}>
