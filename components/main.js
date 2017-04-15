@@ -19,10 +19,10 @@ const onButtonPress = (id) => {
   navigate('map', {location: this.state.location});
 }
 
-export class Places extends React.Component {
+export class Main extends React.Component {
   static navigationOptions = {
     header: {
-      title: 'Explore'
+      title: 'Sounds'
     }
   };
   constructor(props) {

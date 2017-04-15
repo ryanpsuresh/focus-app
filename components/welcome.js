@@ -35,7 +35,7 @@ export class Welcome extends React.Component {
           <View style={{padding: 30 }}>
             <Button
               onPress={() => navigate('Main')}
-              title="Places"
+              title="Main"
               style={styles.button}
               textStyle={styles.buttonText}
               children={'Start Button'}
