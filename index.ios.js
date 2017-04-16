@@ -10,4 +10,4 @@ const Focus = StackNavigator({
   MediaPlayer: { screen: MediaPlayer }
 })
 
-AppRegistry.registerComponent('Focus2', () => Focus);
+AppRegistry.registerComponent('Focus', () => Focus);
