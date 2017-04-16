@@ -1,6 +1,5 @@
 import React from 'react';
 import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
-import Button from 'apsl-react-native-button';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Sound from 'react-native-sound';
 
@@ -10,7 +9,7 @@ export class MediaPlayer extends React.Component {
     super(props);
     this.state = {
       isPlaying: true,
-      sound: new Sound('white.mp3', Sound.MAIN_BUNDLE, (error) => {
+      sound: new Sound(this.props.navigation.state.params.sound, Sound.MAIN_BUNDLE, (error) => {
         if (error) {
           console.log('failed to load the sound', error);
           return;
@@ -31,15 +30,19 @@ export class MediaPlayer extends React.Component {
     <View style={styles.background}>
       <View>
         <Icon.Button 
-          name = 'play'
+          name = {this.state.isPlaying ? 'pause' : 'play'}
           color = 'black'
           onPress={() => {
             if(this.state.isPlaying) {
-              this.state.isPlaying = false;
+              this.setState({
+                isPlaying: false
+              });
               this.state.sound.pause();
             }
             else {
-              this.state.isPlaying = true;
+              this.setState({
+                isPlaying: true
+              });
               this.state.sound.play();
             }
            }

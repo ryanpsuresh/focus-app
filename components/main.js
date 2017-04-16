@@ -3,7 +3,7 @@ import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } fr
 import { StackNavigator } from 'react-navigation';
 
 const locationData = {
-  '0': [require('../assets/whitenoise1.jpg'), 'https://www.google.com/maps/@27.1733511,78.042109,3a,75y,1.38h,89.29t/data=!3m7!1e1!3m5!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5!7i13312!8i6656?hl=en//www.google.com/maps/preview/@27.173385,78.042122,3a,75y,1.38h,89.29t/data=!3m5!1e1!3m3!1sypwvZafR9EHGbeK0JPItLg!2e0!3e5?hl=en'],
+  '0': [require('../assets/whitenoise1.jpg'), 'white.mp3'],
   '1': [require('../assets/brownnoise.jpg'), 'https://www.google.com/maps/@-13.1640352,-72.5449358,3a,90y,0.69h,76.11t/data=!3m6!1e1!3m4!1sshqpOcVdDrWDJrlbJTiTfg!2e0!7i13312!8i6656'],
   '2': [require('../assets/pinknoise.jpg'), 'https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/'],
   '3': [require('../assets/rain.jpg'), 'https://www.google.com/maps/place/Great+Wall+of+China/@40.4318996,116.56842,555m/data=!3m1!1e3!4m5!3m4!1s0x35f121d7687f2ccf:0xd040259b950522df!8m2!3d40.4319077!4d116.5703749'],
@@ -42,7 +42,7 @@ export class Main extends React.Component {
           dataSource={this.state.dataSource}
           renderRow={(rowData, sectionID, rowID) => 
             <TouchableOpacity
-              onPress = {() => navigate('MediaPlayer')}
+              onPress = {() => navigate('MediaPlayer', {sound: locationData[rowID][1], background: locationData[rowID][0]})}
             >
               <Image source={locationData[rowID][0]} style={styles.image} resizeMode='cover'>
                 <Text style={styles.text}>
