@@ -37,6 +37,8 @@ export class MediaPlayer extends React.Component {
           <Icon.Button 
             name = {this.state.isPlaying ? 'pause' : 'play'}
             color = 'black'
+            size = {40}
+            backgroundColor = 'transparent'
             onPress={() => {
               if(this.state.isPlaying) {
                 this.setState({
