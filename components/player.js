@@ -1,18 +1,13 @@
 import React from 'react';
 import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 import Button from 'apsl-react-native-button';
-import Sound from 'react-native-simple-sound';
 
 export class MediaPlayer extends React.Component {
   render() {
     return (
     <View style={{padding: 30 }}>
      <Button
-      onPress={() => {
-       Sound.enable(true);
-       Sound.prepare('../assets/white.mp3');
-       Sound.play();
-       }
+      onPress={() => {}
       }
       title="Main"
       style={styles.button}

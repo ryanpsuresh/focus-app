@@ -1,7 +1,6 @@
-package com.focus;
+package com.focus2;
 
 import com.facebook.react.ReactActivity;
-import com.greatdroid.reactnative.media.MediaKitPackage;
 
 public class MainActivity extends ReactActivity {
 
@@ -11,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "Focus";
+        return "Focus2";
     }
 }
