@@ -28,28 +28,34 @@ export class MediaPlayer extends React.Component {
   render() {
     return (
     <View style={styles.background}>
-      <View>
-        <Icon.Button 
-          name = {this.state.isPlaying ? 'pause' : 'play'}
-          color = 'black'
-          onPress={() => {
-            if(this.state.isPlaying) {
-              this.setState({
-                isPlaying: false
-              });
-              this.state.sound.pause();
+      <Image
+        source={this.props.navigation.state.params.background}
+        resizeMode='cover'
+        style={styles.container}
+      >
+        <View>
+          <Icon.Button 
+            name = {this.state.isPlaying ? 'pause' : 'play'}
+            color = 'black'
+            onPress={() => {
+              if(this.state.isPlaying) {
+                this.setState({
+                  isPlaying: false
+                });
+                this.state.sound.pause();
+              }
+              else {
+                this.setState({
+                  isPlaying: true
+                });
+                this.state.sound.play();
+              }
             }
-            else {
-              this.setState({
-                isPlaying: true
-              });
-              this.state.sound.play();
             }
-           }
-          }
-        >
-        </Icon.Button>
-      </View>
+          >
+          </Icon.Button>
+        </View>
+      </Image>
     </View>
     );
   }
@@ -58,8 +64,12 @@ export class MediaPlayer extends React.Component {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: 'center', 
+  },
+  container: {
+    flex: 1,
     alignItems: 'center',
-    backgroundColor: 'blue'
+    justifyContent: 'center',
+    width: null,
+    height: null
   }
 });
