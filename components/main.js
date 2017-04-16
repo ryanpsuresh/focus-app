@@ -12,13 +12,6 @@ const locationData = {
   '6': [require('../assets/rome.jpg'), 'https://www.instantstreetview.com/@41.889962,12.492078,24.56h,5p,1z']
 }
 
-const onButtonPress = (id) => {
-  this.setState({
-    location: locationData[id][1],
-  });
-  navigate('map', {location: this.state.location});
-}
-
 export class Main extends React.Component {
   static navigationOptions = {
     header: {
