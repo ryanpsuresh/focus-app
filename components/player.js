@@ -7,13 +7,22 @@ export class MediaPlayer extends React.Component {
 
   constructor(props){
     super(props);
+    this.state = {
+      isPlaying: true,
+      sound: new Sound('white.mp3', Sound.MAIN_BUNDLE, (error) => {
+        if (error) {
+          console.log('failed to load the sound', error);
+          return;
+        } 
+        // loaded successfully
+        this.state.sound.play();
+      })
+    }
   }
 
-  ComponentWillMount() {
-
-    console.log("getting in here");
-
-    
+  componentWillMount() {
+    // Loop indefinitely until stop() is called
+    this.state.sound.setNumberOfLoops(-1);
   }
 
   render() {
@@ -21,33 +30,14 @@ export class MediaPlayer extends React.Component {
     <View style={{padding: 30 }}>
      <Button
       onPress={() => {
-        Sound.enable(true);
-        Sound.setCategory('Playback');
-
-        var whoosh = new Sound('white.mp3', Sound.MAIN_BUNDLE, (error) => {
-          if (error) {
-            console.log('failed to load the sound', error);
-            return;
-          } 
-          // loaded successfully
-          whoosh.play();
-        });
-
-        // Reduce the volume by half
-        whoosh.setVolume(0.5);
-
-        // Loop indefinitely until stop() is called
-        whoosh.setNumberOfLoops(-1);
-
-        // Get properties of the player instance
-        console.log('volume: ' + whoosh.getVolume());
-        console.log('pan: ' + whoosh.getPan());
-        console.log('loops: ' + whoosh.getNumberOfLoops());
-
-        // Seek to a specific point in seconds
-        whoosh.setCurrentTime(2.5);
-
-        console.log('button being pressed');
+        if(this.state.isPlaying) {
+          this.state.isPlaying = false;
+          this.state.sound.pause();
+        }
+        else {
+          this.state.isPlaying = true;
+          this.state.sound.play();
+        }
        }
       }
       title="Main"
