@@ -10,6 +10,7 @@
     "apsl-react-native-button": "^2.5.0",
     "react": "15.4.2",
     "react-native": "0.42.3",
+    "react-native-sound": "^0.9.1",
     "react-navigation": "^1.0.0-beta.7"
   },
   "devDependencies": {
