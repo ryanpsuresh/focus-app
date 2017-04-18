@@ -44,6 +44,14 @@
 		760A6A9F1E1A494ABC7154A5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DD0A8F72BD24797912D3C64 /* EvilIcons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		875136D35CE64A34B1E2E74A /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B096807CE304F42ACEC604D /* libRNVectorIcons.a */; };
+		9435ED8F1EA6C77A00E23454 /* brown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435ED8E1EA6C77A00E23454 /* brown.mp3 */; };
+		9435EDAC1EA6C78C00E23454 /* pink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDAB1EA6C78C00E23454 /* pink.mp3 */; };
+		9435EDB31EA6CC1C00E23454 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDAD1EA6CC1C00E23454 /* beach.mp3 */; };
+		9435EDB41EA6CC1C00E23454 /* campfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDAE1EA6CC1C00E23454 /* campfire.mp3 */; };
+		9435EDB51EA6CC1C00E23454 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDAF1EA6CC1C00E23454 /* rain.mp3 */; };
+		9435EDB61EA6CC1C00E23454 /* rainforest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDB01EA6CC1C00E23454 /* rainforest.mp3 */; };
+		9435EDB71EA6CC1C00E23454 /* rainstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDB11EA6CC1C00E23454 /* rainstorm.mp3 */; };
+		9435EDB81EA6CC1C00E23454 /* runningwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9435EDB21EA6CC1C00E23454 /* runningwater.mp3 */; };
 		94404E721EA2FDB100CC0294 /* white.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94404E711EA2FDB100CC0294 /* white.mp3 */; };
 		CE78D90173BA49158ACE3829 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E80D75D3A34EAA87195E0A /* FontAwesome.ttf */; };
 		D0EB702059894303A31F4F21 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E03A47572B54666A863AE48 /* Zocial.ttf */; };
@@ -291,6 +299,14 @@
 		6E03A47572B54666A863AE48 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9435ED8E1EA6C77A00E23454 /* brown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = brown.mp3; path = ../assets/brown.mp3; sourceTree = "<group>"; };
+		9435EDAB1EA6C78C00E23454 /* pink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pink.mp3; path = ../assets/pink.mp3; sourceTree = "<group>"; };
+		9435EDAD1EA6CC1C00E23454 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beach.mp3; path = ../assets/beach.mp3; sourceTree = "<group>"; };
+		9435EDAE1EA6CC1C00E23454 /* campfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = campfire.mp3; path = ../assets/campfire.mp3; sourceTree = "<group>"; };
+		9435EDAF1EA6CC1C00E23454 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain.mp3; path = ../assets/rain.mp3; sourceTree = "<group>"; };
+		9435EDB01EA6CC1C00E23454 /* rainforest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rainforest.mp3; path = ../assets/rainforest.mp3; sourceTree = "<group>"; };
+		9435EDB11EA6CC1C00E23454 /* rainstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rainstorm.mp3; path = ../assets/rainstorm.mp3; sourceTree = "<group>"; };
+		9435EDB21EA6CC1C00E23454 /* runningwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = runningwater.mp3; path = ../assets/runningwater.mp3; sourceTree = "<group>"; };
 		94404E711EA2FDB100CC0294 /* white.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = white.mp3; path = ../assets/white.mp3; sourceTree = "<group>"; };
 		96E45919ED77450AA6F05C99 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		9ABFCD328C68404BB2303B16 /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
@@ -526,6 +542,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9435EDAD1EA6CC1C00E23454 /* beach.mp3 */,
+				9435EDAE1EA6CC1C00E23454 /* campfire.mp3 */,
+				9435EDAF1EA6CC1C00E23454 /* rain.mp3 */,
+				9435EDB01EA6CC1C00E23454 /* rainforest.mp3 */,
+				9435EDB11EA6CC1C00E23454 /* rainstorm.mp3 */,
+				9435EDB21EA6CC1C00E23454 /* runningwater.mp3 */,
+				9435EDAB1EA6C78C00E23454 /* pink.mp3 */,
+				9435ED8E1EA6C77A00E23454 /* brown.mp3 */,
 				94404E711EA2FDB100CC0294 /* white.mp3 */,
 				13B07FAE1A68108700A75B9A /* Focus2 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -944,14 +968,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9435EDB71EA6CC1C00E23454 /* rainstorm.mp3 in Resources */,
+				9435EDB81EA6CC1C00E23454 /* runningwater.mp3 in Resources */,
+				9435EDB51EA6CC1C00E23454 /* rain.mp3 in Resources */,
 				94404E721EA2FDB100CC0294 /* white.mp3 in Resources */,
 				4EBF95DBA4FC431EBE281F74 /* Entypo.ttf in Resources */,
 				760A6A9F1E1A494ABC7154A5 /* EvilIcons.ttf in Resources */,
+				9435ED8F1EA6C77A00E23454 /* brown.mp3 in Resources */,
 				CE78D90173BA49158ACE3829 /* FontAwesome.ttf in Resources */,
 				DBD74BDE1E9F49828244B5DC /* Foundation.ttf in Resources */,
 				345DCCF4FB9246C3B0A5FF2F /* Ionicons.ttf in Resources */,
+				9435EDB41EA6CC1C00E23454 /* campfire.mp3 in Resources */,
 				694559BB59D3493F950D8750 /* MaterialCommunityIcons.ttf in Resources */,
+				9435EDB61EA6CC1C00E23454 /* rainforest.mp3 in Resources */,
+				9435EDB31EA6CC1C00E23454 /* beach.mp3 in Resources */,
 				02921B4D9BAC4710A762D604 /* MaterialIcons.ttf in Resources */,
+				9435EDAC1EA6C78C00E23454 /* pink.mp3 in Resources */,
 				F8E83DC83D92480B9B518366 /* Octicons.ttf in Resources */,
 				0F0F9D1D6BCE40E4858CC699 /* SimpleLineIcons.ttf in Resources */,
 				D0EB702059894303A31F4F21 /* Zocial.ttf in Resources */,

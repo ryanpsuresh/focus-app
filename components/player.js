@@ -25,6 +25,10 @@ export class MediaPlayer extends React.Component {
     this.state.sound.setNumberOfLoops(-1);
   }
 
+  componentWillUnmount() {
+    this.state.sound.stop();
+  }
+
   render() {
     return (
     <View style={styles.background}>
