@@ -39,7 +39,7 @@ export class MediaPlayer extends React.Component {
         style={styles.container}
       >
       <AdMobBanner style={styles.ad}
-        bannerSize="banner"
+        bannerSize="smartBannerPortrait"
         adUnitID="ca-app-pub-6769389345142533/2242899407"
         testDeviceID="EMULATOR"
         didFailToReceiveAdWithError={this.bannerError} />
