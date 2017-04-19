@@ -2,6 +2,7 @@ import React from 'react';
 import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Sound from 'react-native-sound';
+import { AdMobBanner } from 'react-native-admob'
 
 export class MediaPlayer extends React.Component {
 
@@ -37,6 +38,11 @@ export class MediaPlayer extends React.Component {
         resizeMode='cover'
         style={styles.container}
       >
+      <AdMobBanner
+        bannerSize="fullBanner"
+        adUnitID="ca-app-pub-6769389345142533/2242899407"
+        testDeviceID="EMULATOR"
+        didFailToReceiveAdWithError={this.bannerError} />
         <View>
           <Icon.Button 
             name = {this.state.isPlaying ? 'pause' : 'play'}

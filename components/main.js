@@ -3,15 +3,17 @@ import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } fr
 import { StackNavigator } from 'react-navigation';
 
 const locationData = {
-  '0': [require('../assets/whitenoise1.jpg'), 'white.mp3', 'White Noise'],
+  '0': [require('../assets/beach.jpg'), 'beach.mp3', 'Beach'],
   '1': [require('../assets/brownnoise.jpg'), 'brown.mp3', 'Brown Noise'],
-  '2': [require('../assets/pinknoise.jpg'), 'pink.mp3', 'Pink Noise'],
-  '3': [require('../assets/rain.jpg'), 'rain.mp3', 'Relaxing Rain'],
-  '4': [require('../assets/rainforest1.jpg'), 'rainforest.mp3', 'Forest'],
-  '5': [require('../assets/beach.jpg'), 'beach.mp3', 'Beach'],
-  '6': [require('../assets/campfire.jpg'), 'campfire.mp3', 'Camp Fire'],
-  '7': [require('../assets/runningwater.jpg'), 'runningwater.mp3', 'Running Water'],
-  '8': [require('../assets/rainstorm.jpg'), 'rainstorm.mp3', 'Rain Storm']
+  '2': [require('../assets/campfire.jpg'), 'campfire.mp3', 'Camp Fire'],
+  '3': [require('../assets/rainforest1.jpg'), 'rainforest.mp3', 'Forest'],
+  '4': [require('../assets/pinknoise.jpg'), 'pink.mp3', 'Pink Noise'],
+  '5': [require('../assets/rain.jpg'), 'rain.mp3', 'Relaxing Rain'],
+  '6': [require('../assets/runningwater.jpg'), 'runningwater.mp3', 'Running Water'],
+  '7': [require('../assets/space.jpg'), 'space.mp3', 'Space'],
+  '8': [require('../assets/rainstorm.jpg'), 'rainstorm.mp3', 'Storm'],
+  '9': [require('../assets/train.jpg'), 'train.mp3', 'Train'],
+  '10': [require('../assets/whitenoise1.jpg'), 'white.mp3', 'White Noise'],
 }
 
 export class Main extends React.Component {
@@ -25,7 +27,7 @@ export class Main extends React.Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows([
-        'White Noise', 'Brown Noise', 'Pink Noise', 'Relaxing Rain', 'Forest', 'Beach', 'Camp Fire', 'Running Water', 'Rain Storm'
+        'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Pink Noise', 'Rain', 'Running Water', 'Space', 'Storm', 'Train', 'White Noise'
       ])
     };
   }
