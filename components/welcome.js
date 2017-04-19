@@ -4,7 +4,7 @@ import { StackNavigator } from 'react-navigation';
 import { Text, View, StyleSheet, Image } from 'react-native';
 
 const images = {
-  'world5': require('../assets/giphy5.gif')
+  'world5': require('../assets/giphy12.jpg')
 }
 
 export class Welcome extends React.Component {
@@ -29,7 +29,7 @@ export class Welcome extends React.Component {
           </View>
           <View style={styles.infoContainer}>
             <Text style={styles.info}>
-              Improve your concentration by listening to sounds scientifically proven to enhance your focus
+              Improve your focus by listening to sounds scientifically proven to enhance your concentration
             </Text>
           </View>
           <View style={{padding: 30 }}>
@@ -38,7 +38,7 @@ export class Welcome extends React.Component {
               title="Main"
               style={styles.button}
               textStyle={styles.buttonText}
-              children={'Start Button'}
+              children={'Listen to Sounds'}
             />
           </View>
         </Image>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   title: {
     backgroundColor: 'transparent',
-    fontSize: 48,
+    fontSize: 54,
     fontWeight: '500',
     color: '#F3F3F3',
     textAlign: 'center'
@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
     flex: 0.3
   },
   info: {
-    fontSize: 30,
+    fontSize: 34,
+    fontWeight: 20,
     alignItems: 'center',
     textAlign: 'center',
     margin: 20,

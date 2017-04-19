@@ -64,9 +64,9 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   text: {
-    fontFamily: 'Courier New', 
+    fontFamily: 'OpenSans',
     backgroundColor: 'transparent', 
-    fontWeight: 'bold', 
+    fontWeight: '600', 
     fontSize: 22, 
     color: 'white'
   }
