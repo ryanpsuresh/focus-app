@@ -38,8 +38,8 @@ export class MediaPlayer extends React.Component {
         resizeMode='cover'
         style={styles.container}
       >
-      <AdMobBanner
-        bannerSize="fullBanner"
+      <AdMobBanner style={styles.ad}
+        bannerSize="banner"
         adUnitID="ca-app-pub-6769389345142533/2242899407"
         testDeviceID="EMULATOR"
         didFailToReceiveAdWithError={this.bannerError} />
@@ -74,6 +74,11 @@ export class MediaPlayer extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  ad: {
+    position: 'absolute',
+    bottom: 10,
+    alignItems: 'center'
+  },
   background: {
     flex: 1,
   },
