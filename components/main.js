@@ -36,6 +36,16 @@ export class Main extends React.Component {
       sound: ''
     };
   }
+
+  componentDidMount() {
+    Sound.setCategory('Playback');
+  }
+
+  componentWillUnmount() {
+    this.state.sound.stop();
+    this.state.sound.release();
+  }
+
   render() {
     const { navigate } = this.props.navigation; 
     return (
@@ -47,6 +57,7 @@ export class Main extends React.Component {
               onPress = {() => {
                 if(this.state.sound) {
                   this.state.sound.stop();
+                  this.state.sound.release();
                 }
                 this.setState({
                   sound: new Sound(locationData[rowID][1], Sound.MAIN_BUNDLE, (error) => {
@@ -55,7 +66,6 @@ export class Main extends React.Component {
                       return;
                     } 
                     // loaded successfully
-                    this.state.sound.setCategory('Playback');
                     this.state.sound.setNumberOfLoops(-1);
                     this.state.sound.play();
                     navigate('MediaPlayer', {sound: this.state.sound, background: locationData[rowID][0]})
