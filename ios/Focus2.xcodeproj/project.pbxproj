@@ -70,6 +70,9 @@
 		9435EDD71EA6E65000E23454 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435EDD61EA6E65000E23454 /* MessageUI.framework */; };
 		9435EDD91EA6E65600E23454 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435EDD81EA6E65600E23454 /* StoreKit.framework */; };
 		9435EDDB1EA6E66000E23454 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435EDDA1EA6E66000E23454 /* SystemConfiguration.framework */; };
+		94D2A2191EA970E8003D4721 /* night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D2A2181EA970E8003D4721 /* night.mp3 */; };
+		94D2A2371EA973CD003D4721 /* tibetan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D2A2361EA973CD003D4721 /* tibetan.mp3 */; };
+		94D2A23B1EA97633003D4721 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D2A23A1EA97633003D4721 /* wind.mp3 */; };
 		9ECD987CD7614E6BBC505354 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4CC1BE80D54351923CC4D1 /* OpenSans-LightItalic.ttf */; };
 		BC831E643E6D4E35A8CCD7ED /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF2727A31E47D4875B11E2 /* OpenSans-Light.ttf */; };
 		C4CC4EC086D24BFAB337E53E /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD73697D27B4CB780245D0A /* OpenSans-ExtraBoldItalic.ttf */; };
@@ -360,6 +363,9 @@
 		9435EDD61EA6E65000E23454 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9435EDD81EA6E65600E23454 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9435EDDA1EA6E66000E23454 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94D2A2181EA970E8003D4721 /* night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = night.mp3; path = ../assets/night.mp3; sourceTree = "<group>"; };
+		94D2A2361EA973CD003D4721 /* tibetan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tibetan.mp3; path = ../assets/tibetan.mp3; sourceTree = "<group>"; };
+		94D2A23A1EA97633003D4721 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind.mp3; path = ../assets/wind.mp3; sourceTree = "<group>"; };
 		96E45919ED77450AA6F05C99 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		96EA2FD5C3DC42D4B2D5F8E5 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiboldItalic.ttf"; path = "../assets/fonts/Open_Sans/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		9ABFCD328C68404BB2303B16 /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
@@ -624,6 +630,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				94D2A23A1EA97633003D4721 /* wind.mp3 */,
+				94D2A2361EA973CD003D4721 /* tibetan.mp3 */,
+				94D2A2181EA970E8003D4721 /* night.mp3 */,
 				9435EDC11EA6D13100E23454 /* train.mp3 */,
 				9435EDB91EA6D04100E23454 /* brown.mp3 */,
 				9435EDBA1EA6D04100E23454 /* pink.mp3 */,
@@ -1105,14 +1114,17 @@
 				760A6A9F1E1A494ABC7154A5 /* EvilIcons.ttf in Resources */,
 				CE78D90173BA49158ACE3829 /* FontAwesome.ttf in Resources */,
 				DBD74BDE1E9F49828244B5DC /* Foundation.ttf in Resources */,
+				94D2A2371EA973CD003D4721 /* tibetan.mp3 in Resources */,
 				345DCCF4FB9246C3B0A5FF2F /* Ionicons.ttf in Resources */,
 				9435EDBF1EA6D04100E23454 /* space.mp3 in Resources */,
 				9435EDB41EA6CC1C00E23454 /* campfire.mp3 in Resources */,
+				94D2A2191EA970E8003D4721 /* night.mp3 in Resources */,
 				9435EDC01EA6D04100E23454 /* white.mp3 in Resources */,
 				694559BB59D3493F950D8750 /* MaterialCommunityIcons.ttf in Resources */,
 				9435EDB61EA6CC1C00E23454 /* rainforest.mp3 in Resources */,
 				9435EDBD1EA6D04100E23454 /* brown.mp3 in Resources */,
 				9435EDB31EA6CC1C00E23454 /* beach.mp3 in Resources */,
+				94D2A23B1EA97633003D4721 /* wind.mp3 in Resources */,
 				02921B4D9BAC4710A762D604 /* MaterialIcons.ttf in Resources */,
 				9435EDBE1EA6D04100E23454 /* pink.mp3 in Resources */,
 				F8E83DC83D92480B9B518366 /* Octicons.ttf in Resources */,

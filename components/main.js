@@ -8,13 +8,16 @@ const locationData = {
   '1': [require('../assets/brownnoise.jpg'), 'brown.mp3', 'Brown Noise'],
   '2': [require('../assets/campfire.jpg'), 'campfire.mp3', 'Camp Fire'],
   '3': [require('../assets/rainforest1.jpg'), 'rainforest.mp3', 'Forest'],
-  '4': [require('../assets/pinknoise.jpg'), 'pink.mp3', 'Pink Noise'],
-  '5': [require('../assets/rain.jpg'), 'rain.mp3', 'Relaxing Rain'],
-  '6': [require('../assets/runningwater.jpg'), 'runningwater.mp3', 'Running Water'],
-  '7': [require('../assets/space.jpg'), 'space.mp3', 'Space'],
-  '8': [require('../assets/rainstorm.jpg'), 'rainstorm.mp3', 'Storm'],
-  '9': [require('../assets/train.jpg'), 'train.mp3', 'Train'],
-  '10': [require('../assets/whitenoise1.jpg'), 'white.mp3', 'White Noise'],
+  '4': [require('../assets/night.jpg'), 'night.mp3', 'Night'],
+  '5': [require('../assets/pinknoise.jpg'), 'pink.mp3', 'Pink Noise'],
+  '6': [require('../assets/plane.jpg'), 'space.mp3', 'Plane'],
+  '7': [require('../assets/rain.jpg'), 'rain.mp3', 'Relaxing Rain'],
+  '8': [require('../assets/runningwater.jpg'), 'runningwater.mp3', 'Running Water'],
+  '9': [require('../assets/rainstorm.jpg'), 'rainstorm.mp3', 'Storm'],
+  '10': [require('../assets/tibetan.jpg'), 'tibetan.mp3', 'Tibetan Bowls'],
+  '11': [require('../assets/train.jpg'), 'train.mp3', 'Train'],
+  '12': [require('../assets/whitenoise1.jpg'), 'white.mp3', 'White Noise'],
+  '13': [require('../assets/wind.jpg'), 'wind.mp3', 'Wind']
 }
 
 export class Main extends React.Component {
@@ -28,7 +31,7 @@ export class Main extends React.Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows([
-        'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Pink Noise', 'Rain', 'Running Water', 'Space', 'Storm', 'Train', 'White Noise'
+        'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Night', 'Pink Noise', 'Plane', 'Rain', 'Running Water', 'Storm', 'Tibetan', 'Train', 'White Noise', 'Wind'
       ]),
       sound: ''
     };
