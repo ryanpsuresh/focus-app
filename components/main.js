@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import Sound from 'react-native-sound';
 import { StackNavigator } from 'react-navigation';
 
 const locationData = {
@@ -28,7 +29,8 @@ export class Main extends React.Component {
     this.state = {
       dataSource: ds.cloneWithRows([
         'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Pink Noise', 'Rain', 'Running Water', 'Space', 'Storm', 'Train', 'White Noise'
-      ])
+      ]),
+      sound: ''
     };
   }
   render() {
@@ -39,7 +41,25 @@ export class Main extends React.Component {
           dataSource={this.state.dataSource}
           renderRow={(rowData, sectionID, rowID) => 
             <TouchableOpacity
-              onPress = {() => navigate('MediaPlayer', {sound: locationData[rowID][1], background: locationData[rowID][0]})}
+              onPress = {() => {
+                if(this.state.sound) {
+                  this.state.sound.stop();
+                }
+                this.setState({
+                  sound: new Sound(locationData[rowID][1], Sound.MAIN_BUNDLE, (error) => {
+                    if (error) {
+                      console.log('failed to load the sound', error);
+                      return;
+                    } 
+                    // loaded successfully
+                    this.state.sound.setCategory('Playback');
+                    this.state.sound.setNumberOfLoops(-1);
+                    this.state.sound.play();
+                    navigate('MediaPlayer', {sound: this.state.sound, background: locationData[rowID][0]})
+                  })
+                })
+                }
+              }
             >
               <Image source={locationData[rowID][0]} style={styles.image} resizeMode='cover'>
                 <Text style={styles.text}>

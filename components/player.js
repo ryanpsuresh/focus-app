@@ -1,8 +1,8 @@
 import React from 'react';
-import { ListView, Text, Image, View, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { AppState, ListView, Text, Image, View, StyleSheet, TouchableOpacity, TouchableHighlight, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Sound from 'react-native-sound';
-import { AdMobBanner } from 'react-native-admob'
+import { AdMobBanner } from 'react-native-admob';
 
 export class MediaPlayer extends React.Component {
 
@@ -10,25 +10,17 @@ export class MediaPlayer extends React.Component {
     super(props);
     this.state = {
       isPlaying: true,
-      sound: new Sound(this.props.navigation.state.params.sound, Sound.MAIN_BUNDLE, (error) => {
-        if (error) {
-          console.log('failed to load the sound', error);
-          return;
-        } 
-        // loaded successfully
-        this.state.sound.play();
-      })
     }
   }
 
   componentWillMount() {
     // Loop indefinitely until stop() is called
-    this.state.sound.setNumberOfLoops(-1);
+    
   }
 
   componentWillUnmount() {
-    this.state.sound.stop();
   }
+
 
   render() {
     return (
@@ -59,15 +51,15 @@ export class MediaPlayer extends React.Component {
                 this.setState({
                   isPlaying: false
                 });
-                this.state.sound.pause();
+                this.props.navigation.state.params.sound.pause();
               }
               else {
                 this.setState({
                   isPlaying: true
                 });
-                this.state.sound.play();
+                this.props.navigation.state.params.sound.play();
               }
-            }
+             }
             }
           >
           </Icon.Button>
