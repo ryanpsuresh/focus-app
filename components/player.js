@@ -43,6 +43,11 @@ export class MediaPlayer extends React.Component {
         adUnitID="ca-app-pub-6769389345142533/2242899407"
         testDeviceID="EMULATOR"
         didFailToReceiveAdWithError={this.bannerError} />
+      <AdMobBanner style={styles.ad2}
+        bannerSize="smartBannerPortrait"
+        adUnitID="ca-app-pub-6769389345142533/2242899407"
+        testDeviceID="EMULATOR"
+        didFailToReceiveAdWithError={this.bannerError} />
         <View>
           <Icon.Button 
             name = {this.state.isPlaying ? 'pause' : 'play'}
@@ -77,6 +82,11 @@ const styles = StyleSheet.create({
   ad: {
     position: 'absolute',
     bottom: 10,
+    alignItems: 'center'
+  },
+  ad2: {
+    position: 'absolute',
+    top: 10,
     alignItems: 'center'
   },
   background: {
