@@ -13,18 +13,26 @@ export class MediaPlayer extends React.Component {
     }
   }
 
-  componentWillMount() {
-    // Loop indefinitely until stop() is called
-    
-  }
-
-  componentWillUnmount() {
-  }
-
-
   render() {
     return (
     <View style={styles.background}>
+      <TouchableHighlight 
+        style = {styles.touch}
+        onPress={() => {
+          if(this.state.isPlaying) {
+            this.setState({
+              isPlaying: false
+            });
+            this.props.navigation.state.params.sound.pause();
+          }
+          else {
+            this.setState({
+              isPlaying: true
+            });
+            this.props.navigation.state.params.sound.play();
+          }
+        }}
+      >
       <Image
         source={this.props.navigation.state.params.background}
         resizeMode='cover'
@@ -59,12 +67,12 @@ export class MediaPlayer extends React.Component {
                 });
                 this.props.navigation.state.params.sound.play();
               }
-             }
-            }
+            }}
           >
           </Icon.Button>
         </View>
       </Image>
+      </TouchableHighlight>
     </View>
     );
   }
@@ -83,6 +91,9 @@ const styles = StyleSheet.create({
   },
   background: {
     flex: 1,
+  },
+  touch: {
+    flex: 1
   },
   container: {
     flex: 1,
