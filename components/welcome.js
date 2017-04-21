@@ -24,7 +24,7 @@ export class Welcome extends React.Component {
         >
           <View style={styles.titleContianer}>
             <Text style={styles.title}>
-              Focus
+              iPhocus
             </Text>
           </View>
           <View style={styles.infoContainer}>

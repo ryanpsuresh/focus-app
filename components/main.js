@@ -31,7 +31,7 @@ export class Main extends React.Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows([
-        'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Night', 'Pink Noise', 'Plane', 'Rain', 'Running Water', 'Storm', 'Tibetan', 'Train', 'White Noise', 'Wind'
+        'Beach', 'Brown Noise', 'Camp Fire', 'Forest', 'Night', 'Pink Noise', 'Plane', 'Rain', 'Running Water', 'Storm', 'Tibetan Bowls', 'Train', 'White Noise', 'Wind'
       ]),
       sound: ''
     };
@@ -42,8 +42,10 @@ export class Main extends React.Component {
   }
 
   componentWillUnmount() {
-    this.state.sound.stop();
-    this.state.sound.release();
+    if(this.state.sound) {
+      this.state.sound.stop();
+      this.state.sound.release();
+    }
   }
 
   render() {
